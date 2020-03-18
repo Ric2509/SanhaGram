@@ -1,0 +1,272 @@
+body
+{
+    background-image: url("../img/img.jpg"); 
+    background-size: 2046px;
+
+}
+
+
+div.middle {
+     position: absolute;
+    width: 410px;
+    height: 873px;
+    margin-left: 864px;
+
+}
+
+div.top1{
+    position: absolute;
+    width: 100%;
+    height: 114px;
+    border-bottom: 3px solid;
+    border-bottom-color: #5b5f6238;
+        /* porcentagem e quando seu pai sae onde ta */
+}
+
+div.top{
+    position : relative;
+    width:100%;
+    height:10%;
+}
+
+div.mid1{
+    position: relative;
+    width: 100%;
+    height: 12%;
+    opacity: 1;
+    border-bottom: 3px solid;
+    border-bottom-color: #5b5f6238;
+}
+
+div.mid2{
+    position: relative;
+    width: 122%;
+    height: 21%;
+    opacity: 1;
+    margin-left: -12%;
+}
+
+form.form2{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+div.mid3{
+    position: relative;
+    width: 100%;
+    height: 71%;
+    margin-left: 1%;
+    margin-top: 11%;
+    opacity: 1;
+    
+}
+
+input.bt-face {
+    position: relative;
+    width: 105%;
+    margin-left: -2%;
+    margin-top: 10%;
+    border: 0px solid #4CAF50;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 6px 10px;
+    text-decoration: none;
+    background: linear-gradient(#4e69a2, #3b5998 50%);
+    color: #fff;
+    height: 45%;
+    /* Linhas para fzr aparecer os 3 pontinhos */
+    overflow : hidden;             
+  text-overflow:ellipsis;
+  direction: ltr;
+  white-space: nowrap;
+    }
+
+    input.bt-face:hover {
+        background:linear-gradient(to bottom,(#4e69a2, #3b5998 50%));
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: all 0.6s ease;
+        }
+
+img.displayed{
+    position: relative;
+    width: 100%;
+    margin-left: 0%;
+}
+
+input.textarea{
+    position: relative;
+    padding-left: 15px;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 27%;
+    margin-top: 5%;
+    color: #949494;
+    border: 0px solid #000000;
+    border-radius: 6px;
+    background: #393636;
+    opacity: 1;
+    font-size: 23px;
+    z-index: 3;
+}
+
+select{
+    position: relative;
+    padding-left: 15px;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 52%;
+    height: 37%;
+    margin-top: 0%;
+    color: white;
+    border: 0px solid #000000;
+    border-radius: 6px;
+    background: #393636;
+    opacity: 1;
+    font-size: 23px;
+    float: left;
+    margin-left: 5%;
+    z-index: 3;
+    line-height: 100%;
+}
+    
+
+input.textarea2{
+    z-index: 3;
+    position: relative;
+    padding-left: 13px;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 17%;
+    height: 35%;
+    margin-top: 0%;
+    color: #949494;
+    border: 0px solid #000000;
+    border-radius: 6px;
+    background: #393636;
+    opacity: 1;
+    font-size: 23px;
+    float: left;
+    margin-left: -1%;
+    
+}
+input.textarea3{
+    z-index: 3;
+    position: relative;
+    padding-left: 15px;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 16%;
+    height: 35%;
+    margin-top: 0%;
+    color: #949494;
+    border: 0px solid #000000;
+    border-radius: 6px;
+    background: #393636;
+    opacity: 1;
+    font-size: 23px;
+    margin-left: 5%;
+}
+    
+
+::-webkit-input-placeholder {
+    color: #949494;
+    opacity:0.4
+ }
+  
+div.txt1{
+    width: 50%;
+    position: relative;
+    margin-top: 16.5%;
+    margin-left: -12%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #949494;
+    float: left;
+    font-size: 22px;
+}
+
+
+  div.bottom1{
+    position: relative;
+    width:100%;
+    height:21%;
+    opacity:1;
+}
+  
+  
+input.bt-login {
+    position: relative;
+    width: 105%;
+    margin-left: -2%;
+    margin-top: 38%;
+    border: 0px solid #4CAF50;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 6px 10px;
+    text-decoration: none;
+    
+    color: #fff;
+    height: 45%;
+    background: linear-gradient(#43ac4f, #278331 50%);
+    
+   
+    }
+
+    input.bt-login:hover {
+        background:linear-gradient(to bottom,(#aeeab5, #8ce196 50%));
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        transition:all 0.6s ease;
+        }
+
+
+        div.bottom2{
+            position: relative;
+            width:100%;
+            height:20%;
+            opacity:1;
+        }
+
+    a.text{
+        position:relative;
+        text-decoration:none;
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+        color:#c5b6b6;
+        margin-left:5%;
+        margin-top:2%;
+        
+    }
+    
+    a:link, a:visited {
+        text-decoration: none
+        }
+    a:hover {
+        text-decoration: underline; 
+        color: #f00
+        }
+    a:active {
+        text-decoration: none
+        }
+
+    p.Fonte{
+        width: 51%;
+        position: relative;
+        margin-top: -8.5%;
+        margin-left: -1%;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #949494;
+        /* float: left; */
+        font-size: 22px;
+    }
+
+    
