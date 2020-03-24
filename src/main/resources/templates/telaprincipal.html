@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="C:\Users\silve\Desktop\Projeto\SanhaGram\styles\style3.css">
+    <link rel="stylesheet" type="text/css"href="/css/style3.css">
     <link href="C:\Users\silve\Desktop\Projeto\SanhaGram\styles\fontawesome-free-5.12.1-web\css\all.css" rel="stylesheet">
     <script src="C:\Users\silve\Desktop\Projeto\SanhaGram\js\scriptelaprincip.js"></script>
 </head>
@@ -34,38 +34,37 @@
                         <div class="corpoconversa desactive" onclick="mostrarconversa(this)">
                             <img class="iconegrupo1" src="C:\Users\silve\Desktop\Projeto\SanhaGram\img\teste1.jpg" alt="Otario">
                         </div>
-                        <div class="textocorpo">Roberta FGV</div>
-                        <div class="textocorpo1">FGV inc.</div>
+                        <div class="textocorpo">Computação</div>
+                        <div class="textocorpo1">SE/9</div>
                         <i id="estrelinha1" class="far fa-star estrelinha1 l" onclick="selecionastarred1(this)"></i>
                         <i class="fas fa-circle"></i>
                     </div>
 
                     <div class="conversa" h="0" p="0">
                         <div class="imgconversa">
-                            <img class="iconegrupo" src="C:\Users\silve\Desktop\Projeto\SanhaGram\img\teste2.jpg" alt="Otario">
-
+                            <img class="iconegrupo" id = "oi" src="C:\Users\silve\Desktop\Projeto\SanhaGram\img\teste2.jpg" alt="Otario">
                         </div>
                         <div class="corpoconversa desactive" onclick="mostrarconversa(this)">
                             <img class="iconegrupo1" src="C:\Users\silve\Desktop\Projeto\SanhaGram\img\teste2.jpg" alt="Otario">
 
                         </div>
-                        <div class="textocorpo">Ricardo IME</div>
-                        <div class="textocorpo1">IME inc.</div>
+                        <div class="textocorpo">Fortificação e Construção</div>
+                        <div class="textocorpo1">SE/2</div>
                         <i id="estrelinha1" class="far fa-star estrelinha1 l" onclick="selecionastarred1(this)"></i>
                         <i class="fas fa-circle"></i>
                     </div>
 
                     <div class="conversa" h="0" p="0">
                         <div class="imgconversa">
-                            <img class="iconegrupo" src="C:\Users\silve\Desktop\Projeto\SanhaGram\img\teste2.jpg" alt="Otario">
+                            <img class="iconegrupo" src="C:\Users\silve\Desktop\Projeto\SanhaGram\img\teste3.jpg" alt="Otario">
 
                         </div>
                         <div class="corpoconversa desactive" onclick="mostrarconversa(this)">
-                            <img class="iconegrupo1" src="C:\Users\silve\Desktop\Projeto\SanhaGram\img\teste2.jpg" alt="Otario">
+                            <img class="iconegrupo1" src="C:\Users\silve\Desktop\Projeto\SanhaGram\img\teste3.jpg" alt="Otario">
 
                         </div>
-                        <div class="textocorpo">Carlos IME</div>
-                        <div class="textocorpo1">IME inc.</div>
+                        <div class="textocorpo">Cartografia</div>
+                        <div class="textocorpo1">SE/6</div>
                         <i id="estrelinha1" class="far fa-star estrelinha1 l" onclick="selecionastarred1(this)"></i>
                         <i class="fas fa-circle"></i>
                     </div>
@@ -77,17 +76,25 @@
     </div>
     <div class="div2">
         <div class="top2" id="header">
-            <div class="imgconversatop2">
-                <img class="conversatop2" src="C:\Users\silve\Desktop\Projeto\SanhaGram\img\teste1.jpg" alt="Otario">
+            <div class="imgconversatop2" id="imagemconversa">
+                <img class="conversatop2" id="contenting" src="C:\Users\silve\Desktop\Projeto\SanhaGram\img\teste1.jpg" alt="Otario">
             </div>
-            <div class="nomeconversatop2">
+            <div class="nomeconversatop2" id = "nomecontenting">
                 Roberta FGV
             </div>
-            <i class="fas fa-plus"></i>
+            <i class="fas fa-plus" id="plus"></i>
         </div>
         <div class="mid2" id="chat">
+            
+               
+            
+            
         </div>
         <div class="bot2" id="escrever">
+            <input class="escreverchat" placeholder="Send Text..." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Send Text...'"
+                type="text" id="escrevchat" name="conversaslado">
+                <i class="fas fa-envelope " id="send"></i>
+
         </div>
     </div>
 

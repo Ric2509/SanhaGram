@@ -275,15 +275,39 @@ form.formtop2{
     background-color: #dcdcdc;
 }
 
+
+#chat::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+#chat::-webkit-scrollbar
+{
+    width: 9px;
+    background-color: #F5F5F5;
+}
+
+#chat::-webkit-scrollbar-thumb
+{
+    border-radius: 25px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #dcdcdc;
+}
 div.top2{
     position: relative;
     margin-top: 8px;
     width: 100%;
     height: 6%;
-    border-bottom-color: #5b5f6238;
+    /* border-bottom-color: white; */
+    border-bottom: 2px solid;
+    border-bottom-color: #b5b5b5;
+    /* border-right-color: #ffffff; */
     padding-left: 4px;
     background: #f8fbfd;
 }
+
 
 div.imgconversatop2{
     position: relative;
@@ -295,13 +319,15 @@ div.imgconversatop2{
     border-radius: 4px 0px 0px 4px;
     border-radius-left: 4px;
     border-right-width: 0px;
+    visibility: hidden;
 }
 
 .fa-plus{
     content: "\f067";
     position: absolute;
-    margin-top: -38px;
+    margin-top: -43px;
     font-size: 19px;
+    visibility: hidden;
     color: #3e3e3e;
     /* background: wheat; */
     margin-left: 1091px;
@@ -310,14 +336,16 @@ div.imgconversatop2{
 
 
 div.nomeconversatop2{
+    visibility: hidden;
     position: relative;
+    user-select: none;
     margin-top: -29px;
     font-size: 20px;
     font-weight: bold;
     margin-left: 87px;
     font-family: Arial, Helvetica, sans-serif;
     /* float: left; */
-    width: 27%;
+    width: 50%;
     height: 100%;
     colr: white;
     color: #3e3e3e;
@@ -347,10 +375,22 @@ img.conversatop2{
 div.mid2{
     position: relative;
     margin-top: 0px;
-    width: 100%;
+    height: 20px;
+    width: 1229px;
     height: 84%;
     border-bottom-color: #5b5f6238;
     background: #f8fbfd;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-image: url(../img/teladefundoconversa.jpg);
+    background-size: 1800px;
+}
+
+img.displayed{
+    height: 100%;
+    position: relative;
+    width: 100%;
+    margin-left: 0%;
 }
 
 div.bot2{
@@ -360,6 +400,38 @@ div.bot2{
     height: 9%;
     border-bottom-color: #5b5f6238;
     background: #f8fbfd;
+}
+
+input.escreverchat{
+    visibility: hidden;
+    position: relative;
+    padding: 8px;
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    height: 43%;
+    margin-top: 1%;
+    margin-left: 20px;
+    color: #949494;
+    border: 0px solid #000000;
+    border-radius: 32px;
+    margin-bottom: 4%;
+    background: #eee;
+    opacity: 1;
+    font-size: 18px;
+    z-index: 10;
+    outline: none;
+}
+
+.fa-envelope
+{
+    visibility: hidden;
+    content: "\f0e0";
+    position: absolute;
+    font-size: 36px;
+    color: #d5d5d5;
+    margin-left: 18px;
+    margin-top: 20px;
 }
 
 div.filho{
@@ -524,317 +596,42 @@ div.textocorpo1{
     z-index: 3;
 }
 
-div.areaconversa{
+div.msgpropria
+{
+        /* visibility: hidden; */
+    /* position: relative; */
     position: relative;
-    float: left;
-    margin-: 28px;
-    margin: 18px;
-    margin-right: 0px;
-    margin-top: 10px;
-    width: 23%;
-    height: 24%;
-    border-bottom-color: #5b5f6238;
-    border: 0px solid #000000;
-    border-radius: 13px;
-    
-}
-
-img.areaconversa{
-      position: relative;
-    width: 100%;
-    height: 100%;
-    border-bottom-color: #5b5f6238;
-    border: 0px solid #000000;
-    border-radius: 13px;
-  
-}
-
-div.textocorpo2{
-    overflow: hidden;
-    position: relative;
-    margin-left: 15px;
-    font-size: 21px;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 56%;
-    height: 48%;
-    margin-top: -133px;
-    font-display: bold;
-    color: white;
-    border: 0px solid #000000;
-    border-radius: 4px;
-    /* margin-bottom: 4%; */
-    font-weight: bold;
-    text-overflow: ellipsis;
-    /* background: #dcdcdc; */
-    opacity: 1;
-    font-size: 19px;
-    z-index: 3;
     user-select: none;
-}
-
-
- div.textocorpo3{
-    user-select: none;
-    overflow: hidden;
-    position: relative;
-    margin-left: 17px;
-    font-size: 21px;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 50%;
-    height: 42%;
-    margin-top: -10px;
-    font-display: bold;
-    color: #949090;
-    border: 0px solid #000000;
-    border-radius: 4px;
-    margin-bottom: 4%;
-    /* font-weight: bold; */
-    font-weight: bold;
-    text-overflow: ellipsis;
-    /* background: #dcdcdc; */
-    opacity: 1;
+    margin-top: 19px;
     font-size: 15px;
-    z-index: 3;
-}
-
-
-div.top{
-    position : relative;
-    width:100%;
-    height:10%;
-}
-
-div.mid1{
-    position: relative;
-    width: 100%;
-    height: 12%;
-    opacity: 1;
-    border-bottom: 3px solid;
-    border-bottom-color: #5b5f6238;
-}
-
-
-form.form2{
-    position:relative;
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-}
-
-div.mid3{
-    position: relative;
-    width: 100%;
-    height: 71%;
-    margin-left: 1%;
-    margin-top: 11%;
-    opacity: 1;
-    
-}
-
-
-    
-
-   
-   
-
-input.bt-face {
-    position: relative;
-    padding-left: 9px;
-    width: 98%;
-    margin-left: 0%;
-    margin-top: 1%;
-    /* margin-bottom: 2%; */
-    border: 0px solid #000000;
-    border-radius: 3px;
-    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    padding: 7px;
     font-weight: bold;
-    float: left;
-    font-size: 18px;
-    padding: 6px 10px;
-    text-decoration: none;
-    background: linear-gradient(#4e69a2, #3b5998 50%);
-    color: #fff;
-    z-index: 3;
-    height: 5%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    direction: ltr;
-    white-space: nowrap;
-    }
-
-    input.bt-face:hover {
-        background:linear-gradient(to bottom,(#4e69a2, #3b5998 50%));
-     
-       
-        transition: all 0.6s ease;
-        }
-
-img.pesquisa{
-    position: absolute;
-    width: 19px;
-    height: 45%;
-    margin-left: 204px;
-    z-index: 5;
-    margin-top: 0px;
-    margin-top: -25px;
-    opacity: 1;
-}
-
-span {
-    content: "\2605";
-}
-
-
-
-select{
-    position: relative;
-    padding-left: 15px;
-    font-size: 21px;
+    min-height: 2%;
+    min-width: 32%;
+    max-width: 32%;
+    margin-left: 66%;
     font-family: Arial, Helvetica, sans-serif;
-    width: 52%;
-    height: 37%;
-    margin-top: 0%;
-    color: white;
+    /* float: left; */
+    colr: white;
     border: 0px solid #000000;
-    border-radius: 6px;
-    background: #393636;
-    opacity: 1;
-    font-size: 23px;
-    float: left;
-    margin-left: 5%;
-    z-index: 3;
-    line-height: 100%;
-}
-    
-
-input.textarea2{
-    position: relative;
-    padding-left: 15px;
-    font-size: 21px;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 18%;
-    height: 61%;
-    margin-top: 3px;
-    color: #949494;
-    border: 0px solid #000000;
-    border-radius: 2px;
-    /* margin-bottom: 0%; */
-    background: #bed5f9;
-    opacity: 1;
-    font-size: 18px;
-    z-index: 3;
-    
-}
-input.textarea3{
-    z-index: 3;
-    position: relative;
-    padding-left: 15px;
-    font-size: 21px;
-    font-family: Arial, Helvetica, sans-serif;
-    width: 16%;
-    height: 35%;
-    margin-top: 0%;
-    color: #949494;
-    border: 0px solid #000000;
-    border-radius: 6px;
-    background: #393636;
-    opacity: 1;
-    font-size: 23px;
-    margin-left: 5%;
-}
-    
-
-::-webkit-input-placeholder {
-    color: #949494;
-    opacity:0.4
- }
-  
-div.txt1{
-    width: 50%;
-    position: relative;
-    margin-top: 16.5%;
-    margin-left: -12%;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #949494;
-    float: left;
-    font-size: 22px;
+    border-radius: 32px;
+    background: #85ffc1;
+    z-index: 12;
+    color: #3e3e3e;
+    /* border-bottom-color: #5b5f6238; */
+    /* border-left: 0px solid #000000; */
+    /* border-radius: 4px 0px 0px 4px; */
+    border-radius-left: 4px;
+    border-right-width: 0px;
 }
 
 
-  div.bottom1{
-    position: relative;
-    width:100%;
-    height:21%;
-    opacity:1;
-}
-  
-  
-div.pesquisa {
-    position: relative;
-    padding-top: 2%;
-    opacity: 0;
-    width: 20px;
-    margin-left: 204px;
-    margin-top: 10px;
-    margin-top: -35px;
-    x: ;
-    text-decoration: none;
-    color: #fff;
-    height: 19%;
-    z-index: 7;
-    background: linear-gradient(#43ac4f, #278331 50%);
-    cursor: pointer;
 
 
-    }
-
-    input.bt-login:hover {
-        background:linear-gradient(to bottom,(#aeeab5, #8ce196 50%));
-        -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        transform: scale(1.2);
-        transition:all 0.6s ease;
-        }
 
 
-        div.bottom2{
-            position: relative;
-            width:100%;
-            height:20%;
-            opacity:1;
-        }
 
-    a.text{
-        position:relative;
-        text-decoration:none;
-        text-align: center;
-        font-family:Arial, Helvetica, sans-serif;
-        color:#c5b6b6;
-        margin-left:5%;
-        margin-top:2%;
-        
-    }
-    
-    a:link, a:visited {
-        text-decoration: none
-        }
-    a:hover {
-        text-decoration: underline; 
-        color: #f00
-        }
-    a:active {
-        text-decoration: none
-        }
 
-    p.Fonte{
-        width: 51%;
-        position: relative;
-        margin-top: -8.5%;
-        margin-left: -1%;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #949494;
-        /* float: left; */
-        font-size: 22px;
-    }
 
-    
+   

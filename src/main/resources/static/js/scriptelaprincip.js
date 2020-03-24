@@ -4,9 +4,6 @@ var sel3 = 1
 var s = [];
 var s1 = [];
 var s2 = [];
-var topoconversa = document.createElement("div");
-var chat = document.createElement("div");
-var fundoconversa = document.createElement("div");
 
 function selecionastarred() {
     var a = document.getElementsByClassName("far fa-star estrelinha1")
@@ -98,10 +95,22 @@ function minimizatela(valor) {
 }
 
 function mostrarconversa(valor) {
+
+    var g = document.getElementsByClassName("conversa");
     var a = document.getElementsByClassName("corpoconversa");
     var b = document.getElementsByClassName("corpoconversa active");
     var c = document.getElementById("chat");
-
+    var d = document.getElementById("imagemconversa");
+    var e = document.getElementById("contenting");
+    var f = document.getElementById("nomecontenting");
+    var h = document.getElementById("plus");
+    var i = document.getElementById("escrevchat");
+    var j = document.getElementById("send");
+    h.style.visibility = "visible";
+    i.style.visibility = "visible";
+    i.value = "";
+    j.style.visibility = "visible";
+    var sel;
     var i;
     var j;
     var selconv = a.length;
@@ -118,13 +127,16 @@ function mostrarconversa(valor) {
         for (i = 0; i < selconv; i++) {
             if (a[i] == valor) {
                 a[i].className = "corpoconversa active";
+                sel = i;
             }
         }
+
+        var img = a[sel].children;
+        e.src = img[0].src;
+        var filhos = g[sel].children;
+        f.innerText = filhos[2].innerText;
+        d.style.visibility = "visible";
+        f.style.visibility = "visible";
     }
-    topoconversa.position="relative";
-    topoconversa.width="1229px";
-    topoconversa.height="11%";
-    topoconversa.background ="red";
-    c.appendChild(topoconversa);
 }
 
